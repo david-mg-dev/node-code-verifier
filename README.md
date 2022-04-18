@@ -7,6 +7,13 @@ Node Express project - backend
 - npm *ultima version
 - expressJS ```npm i express```
 
+# Installations
+
+- Clonar el Proyecto
+- Instalar todas las dependencias ```npm install```
+- Copiar 'env.example' to '.env' 
+- Establecer tus propias variables
+
 # Dependencies
 
 - typescript ```npm i -D typescript```
