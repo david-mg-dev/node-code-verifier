@@ -18,6 +18,10 @@ app.get('/hello', (req, res) => {
     res.send('Welcome to to GET Route : Hello!');
 });
 
+app.get('/goodbye', (req, res) => {
+    res.json({message: 'Goodbye, wold'});
+});
+
 // Execute APP and Listen Request 
 app.listen(port, () => {
     console.log(`EXPRESS SERVER: Running at http://localhost:${port}`)
