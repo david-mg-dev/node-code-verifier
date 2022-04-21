@@ -33,3 +33,6 @@ Node Express project - backend
 - jest (Libreria de test unitarios de integracion) ```npm i -D jest ts-jest @types/jest supertest```
 - ts-node (Trasnpilar codigo a typescript) ```npm i -D ts-node```
 - serve (Servir nuestro coverage a nivel de web) ```npm i -D serve```
+- cors (Nos permitira hacer peticiones de dominio diferentes a donde tengamos deplegada la aplicacion)  ```npm i cors```
+- helmet (Seguridad en determinadas peticiones)  ```npm i helmet```
+
