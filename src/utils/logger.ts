@@ -1,5 +1,5 @@
 export const LogInfo = (message: string) => {
-    console.log(`Info: ${message}`;)
+    console.log(`Info: ${message}`);
 }
 
 export const LogSucces = (message: string) => {
