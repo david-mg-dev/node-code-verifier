@@ -19,3 +19,10 @@ export const GetAllUsers = async (): Promise<any[] | undefined> => {
     }
 
 }
+
+// TODO
+// - Get User By ID
+// - Get User By Email
+// - Delete User By ID
+// - Create New User
+// - Update User By ID
