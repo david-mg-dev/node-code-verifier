@@ -15,12 +15,14 @@ Node Express project - backend
 - Establecer tus propias variables
 
 # Script
-
+- ```"swagger": "tsoa spec"```
 - ```"build": "npx tsc"``` Con el comando tsc va a generar a partir del archivo de configuracion tsconfig.json (ejecutara y realizara lo que tengamos definido dentro del archivo tsconfig.json)
 - ```"start": "node dist/index.js"``` Ejecutara el codigo transpilado a partir de nuestro codigo typescript
-- ```"dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""``` Utilizaremos para realizar pruebas(para estar escuchando cualquier modificacion , hacer una transpilacion y nodemon para tener la ultima version disponible en nuestro navegador
+- ```"dev": "concurrently \"npx tsc --watch\" \"npm run swagger\" \"nodemon -q dist/index.js\""``` Utilizaremos para realizar pruebas(para estar escuchando cualquier modificacion , hacer una transpilacion y nodemon para tener la ultima version disponible en nuestro navegador
 - ```"test": "jest" ``` Ejecutaremos los archivos de test generados con jest que estan almacenados en la carpeta del proyecto __test__
 - ```"serve:coverage": "npm run test && cd coverage/lcov-report && npx serve"``` Lanza el test de prueba, muestre el coverage y se sirva a la web
+- ```"build": "npx webpack --mode development"```
+- ```"build:prod": "npx webpack --mode production"```
 
 # Dependencies
 
@@ -35,4 +37,8 @@ Node Express project - backend
 - serve (Servir nuestro coverage a nivel de web) ```npm i -D serve```
 - cors (Nos permitira hacer peticiones de dominio diferentes a donde tengamos deplegada la aplicacion)  ```npm i cors```
 - helmet (Seguridad en determinadas peticiones)  ```npm i helmet```
+- mongoose (ORM para base datos NoSQL MongoDB) ```npm i mongoose```
+- libreria ts-loader (Transpilar archivos ts) ```npm i  -D ts-loader```
+- swagger (Documenter funciones y metodos en solucion de swagger, informacion de endpoints) ```npm i -D @types/swagger-jsdoc @types/ui-express``` ```npm i --save swagger-jsdoc swagger-ui-express```
+- tsoa (Genera un json de swagger para la documentacion de nuestro proyecto) ```npm i tsoa```
 
